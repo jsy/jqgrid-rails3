@@ -55,7 +55,18 @@ My gmail account : doinsist@gmail.com
   
   o Add controller methods to ActionController::Base:
     
-    jqgrid_post_data_for
-    jqgrid_index_for
+      jqgrid_post_data_for
+      jqgrid_index_for
     
+    Now, a grid-enabled controller just needs:
+    
+      COLUMNS = [:name, :email]
+      def index
+        jqgrid_index_for MyModel, params, COLUMNS
+      end
+      
+      def post_data
+        jqgrid_post_data_for MyModel, params, COLUMNS
+      end
+      
 Released under the MIT license.
