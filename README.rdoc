@@ -15,6 +15,8 @@ Following features are supported :
 - And more ...
 
 = Install and Uninstall 
+
+  $ rails plugin install git://github.com/jsy/jqgrid-rails3
   
   $ rake jqgrid:install
   
@@ -48,3 +50,12 @@ Copyright (c) 2010 Anthony Heukmes, released under the MIT license
 
 
 My gmail account : doinsist@gmail.com
+
+= JsY Changes
+  
+  o Add controller methods to ActionController::Base:
+    
+    jqgrid_post_data_for
+    jqgrid_index_for
+    
+Released under the MIT license.

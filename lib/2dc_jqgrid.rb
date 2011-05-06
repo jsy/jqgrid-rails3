@@ -484,6 +484,7 @@ module JqgridFilter
   end
 end
 
+require 'jqgrid/controller_extensions'
 
 	
 =begin      
